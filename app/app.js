@@ -3,6 +3,9 @@ define([
   "jquery",
   "lodash",
   "backbone",
+  
+  // Views.
+  "views/applicationMediator",
 
   // Plugins.
   "plugins/backbone.layoutmanager"
@@ -17,6 +20,8 @@ function($, _, Backbone) {
     root: "/"
   };
 
+  console.log('new app')
+  var applicationMediator = new ApplicationMediator();
   // Localize or create a new JavaScript Template object.
   var JST = window.JST = window.JST || {};
 
