@@ -7,6 +7,9 @@ define([
     // Views.
     "views/applicationMediator",
 
+    // Models
+    "models/settings",
+    
     // Plugins.
     "plugins/backbone.layoutmanager"
 ],
@@ -19,6 +22,8 @@ function($, _, Backbone) {
         // The root path to run the application.
         root: "/"
     };
+    
+    console.log('::app');
 
     // Localize or create a new JavaScript Template object.
     var JST = window.JST = window.JST || {};
